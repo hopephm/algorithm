@@ -1,4 +1,4 @@
-package kr.hope.algorithm.string.trie.solution.programmers
+package kr.hope.data.structure.string.trie.solution.programmers
 
 /**
  * @see https://school.programmers.co.kr/learn/courses/30/lessons/60060
@@ -57,7 +57,7 @@ class Trie {
 
     class Node(
         val wordCount: MutableMap<Depth, Count> = mutableMapOf(),
-        val children: MutableMap<Char,Node> = mutableMapOf(),
+        val children: MutableMap<Char, Node> = mutableMapOf(),
     ) {
         fun increaseWordCount(depth: Int) {
             wordCount[depth] = (wordCount[depth] ?: 0) + 1
